@@ -84,7 +84,7 @@ var appRouter = function (app) {
                     {
                         "month": parseInt(req.body.month),
                         "year": parseInt(req.body.year),
-                        "menu": JSON.parse(req.body.menu)
+                        "days": JSON.parse(req.body.menu)
                     }
                 ),
                 function (err) {
