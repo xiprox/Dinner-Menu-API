@@ -35,8 +35,8 @@ var appRouter = function (app) {
                 if (err) {
                     return res.send(
                         {
-                            "month": req.query.month,
-                            "year": req.query.year,
+                            "month": parseInt(req.query.month),
+                            "year": parseInt(req.query.year),
                             "days": []
                         }
                     );
@@ -82,8 +82,8 @@ var appRouter = function (app) {
                 path,
                 JSON.stringify(
                     {
-                        "month": req.body.month,
-                        "year": req.body.year,
+                        "month": parseInt(req.body.month),
+                        "year": parseInt(req.body.year),
                         "menu": JSON.parse(req.body.menu)
                     }
                 ),
